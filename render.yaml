@@ -1,0 +1,10 @@
+services:
+    - type: web
+      name: expense-tracker-backend
+      runtime: node
+      rootDir: expense-tracker-backend
+      buildCommand: npm ci --include=dev && npm run build
+      startCommand: npm start
+      envVars:
+          - key: NODE_ENV
+            value: production

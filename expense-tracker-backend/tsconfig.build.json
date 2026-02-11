@@ -1,5 +1,4 @@
 {
-	"extends": "./tsconfig.json",
 	"compilerOptions": {
 		"noEmit": false,
 		"outDir": "dist",
@@ -8,7 +7,12 @@
 		"moduleResolution": "NodeNext",
 		"types": ["node"],
 		"lib": ["ES2022"],
-		"sourceMap": true
+		"sourceMap": true,
+		"target": "ES2022",
+		"strict": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true
 	},
 	"include": ["src/**/*.ts"],
 	"exclude": ["tests", "drizzle.config.ts", "drizzle", "node_modules"]

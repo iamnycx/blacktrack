@@ -1,10 +1,10 @@
 import { ethers } from 'ethers';
 import { eq } from 'drizzle-orm';
-import { db } from '../db';
-import { users } from '../db/schema';
-import { signJwt } from '../utils/jwt';
-import { createNonce } from '../utils/nonce';
-import { buildLoginMessage } from '../utils/siweMessage';
+import { db } from '../db/index.js';
+import { users } from '../db/schema.js';
+import { signJwt } from '../utils/jwt.js';
+import { createNonce } from '../utils/nonce.js';
+import { buildLoginMessage } from '../utils/siweMessage.js';
 
 const normalizeAddress = (walletAddress: string): string => {
 	if (!walletAddress) {

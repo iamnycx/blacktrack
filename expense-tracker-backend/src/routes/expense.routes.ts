@@ -5,8 +5,8 @@ import {
 	getExpenseById,
 	getExpenses,
 	updateExpense,
-} from '../controllers/expense.controller';
-import { authMiddleware } from '../middlewares/auth.middleware';
+} from '../controllers/expense.controller.js';
+import { authMiddleware } from '../middlewares/auth.middleware.js';
 
 const router = express.Router();
 

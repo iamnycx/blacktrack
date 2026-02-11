@@ -1,5 +1,8 @@
 import type { Request, Response } from 'express';
-import { nonceGenerator, signatureVerifier } from '../services/auth.services';
+import {
+	nonceGenerator,
+	signatureVerifier,
+} from '../services/auth.services.js';
 
 export const requestNonce = async (req: Request, res: Response) => {
 	try {

@@ -3,8 +3,8 @@ import {
 	deleteUserAccountById,
 	getUserProfileById,
 	updateUserProfileById,
-} from '../services/user.services';
-import { validateProfileUpdate } from '../utils/userProfile';
+} from '../services/user.services.js';
+import { validateProfileUpdate } from '../utils/userProfile.js';
 
 const resolveUserId = (res: Response): number | null => {
 	const rawUserId = res.locals?.user?.userId as unknown;

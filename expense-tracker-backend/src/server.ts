@@ -1,11 +1,11 @@
 import express, { type Request, type Response } from 'express';
 import cors from 'cors';
 
-import authRoutes from './routes/auth.routes';
-import userRoutes from './routes/user.routes';
-import expenseRoutes from './routes/expense.routes';
+import authRoutes from './routes/auth.routes.js';
+import userRoutes from './routes/user.routes.js';
+import expenseRoutes from './routes/expense.routes.js';
 
-import { loggerMiddleware } from './middlewares/logger.middleware';
+import { loggerMiddleware } from './middlewares/logger.middleware.js';
 
 const PORT = process.env.PORT || 8000;
 

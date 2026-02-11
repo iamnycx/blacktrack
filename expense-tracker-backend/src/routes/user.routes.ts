@@ -3,8 +3,8 @@ import {
 	deleteUserAccount,
 	getUserProfile,
 	updateUserProfile,
-} from '../controllers/user.controller';
-import { authMiddleware } from '../middlewares/auth.middleware';
+} from '../controllers/user.controller.js';
+import { authMiddleware } from '../middlewares/auth.middleware.js';
 
 const router = express.Router();
 

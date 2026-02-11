@@ -1,4 +1,4 @@
-import { categoriesEnum } from '../db/schema';
+import { categoriesEnum } from '../db/schema.js';
 
 const categories = new Set<string>(categoriesEnum.enumValues);
 

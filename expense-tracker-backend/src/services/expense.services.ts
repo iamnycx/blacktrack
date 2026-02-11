@@ -1,6 +1,6 @@
 import { and, desc, eq, gte, lte } from 'drizzle-orm';
-import { db } from '../db';
-import { categoriesEnum, expenses } from '../db/schema';
+import { db } from '../db/index.js';
+import { categoriesEnum, expenses } from '../db/schema.js';
 
 export type ExpenseRecord = {
 	id: number;

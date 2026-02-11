@@ -5,12 +5,12 @@ import {
 	getExpenseByIdForUser,
 	getExpensesForUser,
 	updateExpenseById,
-} from '../services/expense.services';
+} from '../services/expense.services.js';
 import {
 	parseExpenseCreate,
 	parseExpenseListFilters,
 	parseExpenseUpdate,
-} from '../utils/expenseValidation';
+} from '../utils/expenseValidation.js';
 
 const resolveUserId = (res: Response): number | null => {
 	const rawUserId = res.locals?.user?.userId as unknown;

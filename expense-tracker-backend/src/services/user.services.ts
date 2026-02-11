@@ -1,6 +1,6 @@
 import { eq } from 'drizzle-orm';
-import { db } from '../db';
-import { expenses, users } from '../db/schema';
+import { db } from '../db/index.js';
+import { expenses, users } from '../db/schema.js';
 
 export type UserProfile = {
 	id: number;

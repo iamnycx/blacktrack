@@ -11,6 +11,57 @@ export const metadata: Metadata = {
 	title: 'BlackTrack',
 	description:
 		'BlackTrack is a web3 authenticated expense tracker that allows you to track your expenses and manage your budget with ease.',
+	metadataBase: new URL('https://blacktrack-eta.vercel.app/'),
+	keywords: [
+		'nycx',
+		'nycx@dev',
+		'expense tracker',
+		'web3',
+		'authenticated',
+		'budget management',
+		'nextjs',
+		'react',
+		'typescript',
+		'nodejs',
+		'express',
+		'postgresql',
+		'drizzle-orm',
+		'tailwindcss',
+		'vercel',
+		'metamask',
+		'ethers.js',
+	],
+	authors: [
+		{
+			name: 'nycx',
+			url: 'https://nycx.is-a.dev',
+		},
+	],
+	creator: 'nycx',
+	openGraph: {
+		title: 'blacktrack',
+		description:
+			'BlackTrack is a web3 authenticated expense tracker that allows you to track your expenses and manage your budget with ease.',
+		url: 'https://blacktrack-eta.vercel.app/',
+		siteName: 'blacktrack',
+		images: [
+			{
+				url: 'https://blacktrack-eta.vercel.app/opengraph-image.png',
+				width: 1200,
+				height: 630,
+				alt: 'blacktrack',
+			},
+		],
+		type: 'website',
+	},
+
+	twitter: {
+		card: 'summary_large_image',
+		title: 'blacktrack',
+		description:
+			'BlackTrack is a web3 authenticated expense tracker that allows you to track your expenses and manage your budget with ease.',
+		images: ['https://blacktrack-eta.vercel.app/opengraph-image.png'],
+	},
 };
 
 export default function RootLayout({

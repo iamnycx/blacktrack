@@ -12,6 +12,7 @@ import { loginWithMetaMask } from '@/lib/auth';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
+import { toast } from 'sonner';
 
 export default function Home() {
 	const router = useRouter();
@@ -34,7 +35,7 @@ export default function Home() {
 			await loginWithMetaMask();
 			router.push('/dashboard');
 		} catch (err) {
-			alert('MetaMask login failed');
+			toast('Metamask wallet not detected');
 		} finally {
 			setLoading(false);
 		}

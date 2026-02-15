@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/providers/theme-provider';
 import { GeistPixelGrid } from 'geist/font/pixel';
 import Navbar from '@/components/layout/navbar';
 import Container from '@/components/layout/container';
+import { Toaster } from '@/components/ui/sonner';
 
 export const metadata: Metadata = {
 	title: 'BlackTrack',
@@ -81,6 +82,7 @@ export default function RootLayout({
 						{children}
 						<Navbar />
 					</Container>
+					<Toaster />
 				</ThemeProvider>
 			</body>
 		</html>
